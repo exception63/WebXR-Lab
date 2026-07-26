@@ -1,0 +1,36 @@
+{
+  "name": "webxr-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "certs": "node scripts/setup-certs.mjs",
+    "profile:serve": "node scripts/serve-profile.mjs",
+    "services:start": "node scripts/run-services.mjs",
+    "dev": "vite",
+    "dev:http": "WEBXR_LAB_HTTP=1 vite --host 127.0.0.1 --port 4173",
+    "dev:lan": "vite --host 0.0.0.0 --port 8443",
+    "build": "tsc -b && vite build",
+    "check:budgets": "node scripts/check-budgets.mjs",
+    "verify": "pnpm test && pnpm build && pnpm check:budgets",
+    "preview": "vite preview",
+    "preview:lan": "vite preview --host 0.0.0.0 --port 8443",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "three": "^0.185.1",
+    "ws": "^8.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/qrcode": "^1.5.6",
+    "@types/three": "^0.185.1",
+    "@types/webxr": "^0.5.24",
+    "@types/ws": "^8.18.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
+  }
+}

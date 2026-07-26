@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.vite/
+coverage/
+playwright-report/
+test-results/
+.playwright-cli/
+
+# Local HTTPS material — never commit private keys or local CA files.
+.certs/
+*.key
+*.pem
+*.srl
+
+# Local device reports may contain device/browser metadata.
+reports/local/
+
+.DS_Store
+*.log

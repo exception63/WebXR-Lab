@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">WebXR-Lab 轨道庭院预览</title>
+  <desc id="desc">薄荷色与琥珀色拱门围绕中央平台的空间布景。</desc>
+  <defs>
+    <radialGradient id="space" cx="50%" cy="42%" r="68%">
+      <stop offset="0" stop-color="#16352e"/>
+      <stop offset=".5" stop-color="#081713"/>
+      <stop offset="1" stop-color="#020806"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#19362f"/>
+      <stop offset="1" stop-color="#030a08"/>
+    </linearGradient>
+    <filter id="mint-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <filter id="amber-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#space)"/>
+  <g opacity=".17" stroke="#aefbe1" fill="none">
+    <ellipse cx="600" cy="584" rx="490" ry="108"/>
+    <ellipse cx="600" cy="584" rx="360" ry="78"/>
+    <path d="M110 584 600 300l490 284M226 642 600 300l374 342"/>
+  </g>
+  <ellipse cx="600" cy="590" rx="425" ry="95" fill="url(#floor)" stroke="#4d7d70"/>
+  <ellipse cx="600" cy="574" rx="142" ry="40" fill="#b4c9c0" opacity=".8"/>
+  <g fill="none" stroke-linecap="square">
+    <path d="M248 523V236h197v287" stroke="#07120f" stroke-width="38"/>
+    <path d="M260 246h173" stroke="#60f5c1" stroke-width="24"/>
+    <circle cx="347" cy="335" r="25" fill="#69ffd0" stroke="none"/>
+    <path d="M755 523V236h197v287" stroke="#07120f" stroke-width="38"/>
+    <path d="M767 246h173" stroke="#ff9a44" stroke-width="24"/>
+    <circle cx="853" cy="335" r="25" fill="#ff9a44" stroke="none"/>
+  </g>
+  <circle cx="347" cy="335" r="70" fill="#4affc3" opacity=".2" filter="url(#mint-glow)"/>
+  <circle cx="853" cy="335" r="70" fill="#ff762e" opacity=".2" filter="url(#amber-glow)"/>
+  <g fill="#6effd0">
+    <circle cx="250" cy="150" r="9"/><circle cx="169" cy="319" r="6"/><circle cx="397" cy="113" r="6"/>
+  </g>
+  <g fill="#ff9b50">
+    <circle cx="950" cy="150" r="9"/><circle cx="1031" cy="319" r="6"/><circle cx="803" cy="113" r="6"/>
+  </g>
+  <text x="68" y="74" fill="#bafbe5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" letter-spacing="7">SPATIAL SET / VISIONOS 27</text>
+  <text x="68" y="108" fill="#6d9186" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="3">8 M ORBITAL COURTYARD · TRUE-SCALE USDZ</text>
+</svg>
